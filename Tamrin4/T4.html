@@ -1,0 +1,86 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awesome cdn=>w3school -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap cdn=>bootstrapSite -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <!-- syleProject -->
+    <link rel="stylesheet" href="T4.css" />
+</head>
+
+<body>
+    <!-- countainer -->
+    <div class="countainer p-3">
+        <!-- table -->
+        <div>
+            <table class="table" id="table-data">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Row</th>
+                        <th scope="col">UID</th>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Position</th>
+                        <th scope="col">City</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <button type="button" class="btn btn-success" id="creat-btn">Creat</button>
+        <div class="creat-modal" id="creat-modal">
+            <div class="content-creat-modal" id="content-creat-modal">
+                <span><i class="fa fa-close" style="font-size:24px" id="close"></i></span>
+                <div class="countainer-input">
+                    <table id="table-input" class="table-input">
+                        <tr>
+                            <td><label for="uid">UID: </label></td>
+                            <td><input type="text" id="uid" class="style-input" /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="uid">First Name:&nbsp;</label></td>
+                            <td><input type="text" id="firstName" class="style-input" /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="uid">Last Name:&nbsp;</label></td>
+                            <td><input type="text" id="lastName" class="style-input" /></td>
+                        </tr>
+                        <tr >
+                            <td><label for="uid">Position:</label></td>
+                            <td><input type="text" id="position" class="style-input" /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="uid">City:</label></td>
+                            <td><input type="text" id="city" class="style-input" /></td>
+                        </tr>
+                    </table>
+                </div>
+                <button id="btn-ok-creat" type="button" class="btn-ok-creat btn btn-success">OK</button>
+            </div>
+        </div>
+</body>
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="data.js"></script>
+<script src="readFunc.js"></script>
+<script src="creatFunc.js"></script>
+<script src="updateFunc.js"></script>
+
+</html>
